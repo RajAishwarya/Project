@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="logo.png" >
+<script>
+function bigimg(x)
+{
+	x.style.height="42px";
+	x.style.width="42px";
+}
+function smallimg(x)
+{
+	x.style.height="52px";
+	x.style.width="52px";
+}
+</script>
+<style>
+
+pre
+	{
+	margin:0;
+	padding:0;
+	}
+
+body 
+	{
+  	margin: 0;
+  	font-family: Arial, Helvetica, sans-serif;
+	}
+
+.topnav 
+	{
+  	overflow: hidden;
+  	background-color:rgb(80,80,80);
+	}
+
+.topnav a 
+	{
+	margin-left: 5%;
+  	float: left;
+  	display: block;
+  	color: rgb(255,255,255);
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+	}
+
+.social 
+	{
+	padding: 20px;
+	}
+
+.social a:hover
+	{
+	opacity:0.5;
+	
+	}
+.topnav a:hover 
+	{
+  	color:rgb(200,200,200) ;
+  	color: black;
+	}
+
+.tablink 
+	{
+    	background-color:rgb(80,80,80);
+    	color: white;
+    	float: left;
+    	border: none;
+    	outline: none;
+    	cursor: pointer;
+    	padding: 14px 16px;
+    	font-size: 17px;
+    	width: 50%;
+	}
+
+.tablink:hover
+	{
+    	background-color: rgb(180,180,180);
+	}
+
+.tabcontent 
+	{
+    	color: white;
+    	display: none;
+    	padding: 50px;
+    	text-align: center;
+	}
+
+#FAMILY
+	{
+	background-color:rgb(60,180,130);
+	}
+
+#BACHELOR
+	{
+	background-color:rgb(100,130,200);
+	}
+p       {
+         text-align: justify;   
+        }
+</style>
+<title>MY HOME</title>
+</head>
+
+<body style="margin-left:0em; margin-right:0em;margin-top:0em;">
+
+<div class="topnav">
+	<a><img src="slogo.png" alt="l1" style="width:25px;height:25px;"></a>
+	<a href="Main.html" target="_blank">MY HOME</a>
+	<a href="About.html " target="_blank">ABOUT</a>
+  	<a href="Tenant.html">TENANT & OWNER</a>
+  	<a href="TC.html " target="_blank" >T & C</a>
+	<a><pre>   |   </pre></a>
+ 	<a href="ContactUs.html " target="_blank" >CONTACT US</a>
+  	<a href="LogIn.html " target="_blank" >LOG OUT</a>
+</div>
+
+<div>
+<img src="logo.jpg" alt="logo" style="width:1518px;height:600px;">
+<br>
+<br>
+<h1 style="text-align:center;">" Looking for a home in the city then go through this website <br>to find the best and reasonable house for rent."</h1>            
+<br>
+<br>
+</div>
+
+<div style="background-color:rgb(255,150,90); opacity:0.9;">
+<marquee direction = "up" scrollamount="20">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Taylor Swift.jpeg" alt="Divide" style=width:455px;height:455px;opacity:0.8;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="Justin Bieber.jpg" alt="Purpose" style=width:455px;height:455px;opacity:0.8;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+	<img src="Eminen.jpg" alt="Recovery" style=width:455px;height:455px;opacity:0.8;">
+</marquee>
+</div>
+
+
+
+<div id="FAMILY" class="tabcontent">
+  <h3>FAMILY</h3>
+  <p>It is mandatory for tenant to present valid photo identification at the time of check-in. According to government regulations, a valid Photo ID has to be carried by every person above the age of 18. The identification proofs accepted are Aadhar Card, Driving License, Voter ID Card, and Passport. Without Original copy of valid ID the tenant will not be allowed to check-in.<br><br>
+
+      Should any action by a tenant be deemed inappropriate by the home, or if any inappropriate behaviour is brought to the attention of the society, the owner reserves the right, after the allegations have been investigated, to take action against the tenant.<br><br>
+
+Tenan shall be liable for any damage, except normal wear and tear to Home asset. Guest shall keep the Home in a good condition and maintain hygiene and cleanliness.</p>
+</div>
+
+<div id="BACHELOR" class="tabcontent">
+  <h3>BACHELOR</h3>
+  <p>It is mandatory for tenant to present valid photo identification at the time of check-in. According to government regulations, a valid Photo ID has to be carried by every person above the age of 18. The identification proofs accepted are Aadhar Card, Driving License, Voter ID Card, and Passport. Without Original copy of valid ID the tenant will not be allowed to check-in.<br><br>
+
+      Should any action by a tenant be deemed inappropriate by the home, or if any inappropriate behaviour is brought to the attention of the society, the owner reserves the right, after the allegations have been investigated, to take action against the tenant.<br><br>
+
+Tenant shall be liable for any damage, except normal wear and tear to Home asset. Guest shall keep the Home in a good condition and maintain hygiene and cleanliness.</p> 
+</div>
+
+<button class="tablink" onclick="openCity('FAMILY', this, 'rgb(60,180,130)')" id="defaultOpen">FAMILY</button>
+<button class="tablink" onclick="openCity('BACHELOR', this, 'rgb(100,130,200)')">BACHELOR</button>
+<script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+document.getElementById("defaultOpen").click();
+</script>
+<footer>
+<font size="4em" face="arial"><pre style="background-color:rgb(80,80,80); color:rgb(255,255,255);">     
+	 <h2 style="margin-left:6em;">MY HOME</h2><ul style="list-style-type:none; width:30%; float:left;">
+         <li style="margin-left:7em;"><a href=" " target="_blank" style="color:rgb(255,255,255); text-decoration:none;">About</a></li>
+         <li style="margin-left:7em;">News</li>
+         <li style="margin-left:7em;">Developers</li>
+         </ul><ul style="list-style-type:none; display: inline-block;">
+	 <li>Work With Us</li>
+         <li>Policies</li>
+	 <li>Help</li>
+	 </ul>
+<marquee direction = "right" behavior="alternate" scrollamount="10">Thank YOU | Visit Again</marquee>
+<address style="text-align:right;margin-right:10px;font-size:70%;">� 2018 My HOME UM</address>
+</pre>
+<div class="social" style="background-color:rgb(80,80,80);">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/" target="_blank"><img onmouseover="bigimg(this)" onmouseout="smallimg(this)" src="facebook.png" alt="1" style="width:42px;height:42px;"></a>
+  	&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/?lang=en" target="_blank"><img onmouseover="bigimg(this)" onmouseout="smallimg(this)" src="twitter.png" alt="1" style="width:42px;height:42px;"></a>
+  	&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/?hl=en" target="_blank" ><img onmouseover="bigimg(this)" onmouseout="smallimg(this)" src="instagram.png" alt="1" style="width:42px;height:42px;"></a>
+ 	&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/?hl=en-GB&gl=IN" target="_blank" ><img onmouseover="bigimg(this)" onmouseout="smallimg(this)" src="youtube.png" alt="1" style="width:42px;height:42px;"></a>
+</div>		
+<footer/>
+</body>
+</html>

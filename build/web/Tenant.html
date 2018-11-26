@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="logo.png" >
+<style>
+.topnav 
+	{
+  	overflow: hidden;
+  	background-color:rgb(80,80,80);
+	}
+
+.topnav a 
+	{
+	margin-left: 5%;
+  	float: left;
+  	display: block;
+  	color: rgb(255,255,255);
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+	}
+
+.social 
+	{
+	padding: 20px;
+	}
+
+.social a:hover
+	{
+	opacity:0.5;
+	
+	}
+.topnav a:hover 
+	{
+  	color:rgb(200,200,200) ;
+  	color: black;
+	}
+
+.tablink 
+	{
+    	background-color:rgb(80,80,80);
+    	color: white;
+    	float: left;
+    	border: none;
+    	outline: none;
+    	cursor: pointer;
+    	padding: 14px 16px;
+    	font-size: 17px;
+    	width: 50%;
+	}
+
+.tablink:hover
+	{
+    	background-color: rgb(180,180,180);
+	}
+
+.tabcontent 
+	{
+    	color: white;
+    	display: none;
+    	padding: 50px;
+    	text-align: center;
+	}
+input[type=text],select{
+    width: 100%;
+    padding: 15px;
+    margin: 8px;
+    background-color: rgba(255,255,255,0.8);
+    display: inline-block;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+input[type=password]{
+    width: 100%;
+    padding: 15px;
+    margin: 8px;
+    background-color: rgba(255,255,255,0.8);
+    display: inline-block;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgba(180,0,0,0.5);
+    color: white;
+    padding: 20px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea{
+    border: 1px solid red;
+    background-color: rgba(255,255,255,0.8);
+}
+
+input[type=button] {
+    width: 100%;
+    background-color: rgba(180,0,0,0.5);
+    color: white;
+    padding: 20px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+input[type=button]:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+#d1 {
+    font-size:80%;
+    color:rgb(0,0,0);
+    margin-left: 330px;
+    margin-top: 50px;
+    border-radius: 3px;
+    background-color: rgba(133,224,133,0.5);
+    padding: 50px;
+    width: 800px;
+    height: 1000px;
+   }
+#d2 {
+    font-size:130%;
+    color:rgb(0,0,0);
+    margin-left: 330px;
+    border-radius: 3px;
+    background-color: rgba(255,150,90,0.5);
+    padding: 50px;
+    width: 800px;
+    height: 200px;
+   }
+#h1
+   {
+   color:rgb(180,0,0);
+   text-align:center;
+   }
+table
+   {
+    padding: 10px;
+    width: 800px;
+    height: 530px;
+   }
+</style>
+<title>TENANT</title>
+</head>
+
+<body style="margin-left:0em; margin-right:0em;margin-top:0em; background-color: rgb(225,204,204);">
+
+<div class="topnav">
+	<a><img src="slogo.png" alt="l1" style="width:25px;height:25px;"></a>
+	<a href="Main.html" target="_blank">MY HOME</a>
+	<a href="About.html " target="_blank">ABOUT</a>
+  	<a href="#TOP">TENANT AND OWNER</a>
+  	<a href="TC.html " target="_blank" >T & C</a>
+	<a><pre>   |   </pre></a>
+ 	<a href="ContactUs.html " target="_blank" >CONTACT US</a>
+  	<a href="LogIn.html " target="_self" >LOG OUT</a>
+</div>      
+
+<script>
+function validateForm() {
+    var x = document.myform.name.value;
+    if (x == ""||x==null) {
+        alert("Name must be filled out");
+        return false;
+    }
+    var y=document.getElementById(age).value;
+	if(y.length==" ")
+	{
+	alert("Age is incorrect");
+	return false;
+	}
+	if(y.length>2)
+	{
+	alert("Age is incorrect");
+	return false;
+	}
+	if(y.length<0)
+	{
+	alert("Age is incorrect");
+	return false;
+	}
+     var z = document.myform.noofmem.value;
+     if (z == ""||z==null) {
+        alert("Members must be filled out");
+        return false;
+     }
+     var b = document.myform.email.value;
+     if (b == ""||b==null) {
+        alert("EMail must be filled out");
+        return false;
+     }
+    	
+	var a=document.getElementById("pno").value;
+	if(a.length==" ")
+	{
+	alert("Number is incorrect");
+	return false;
+	}
+	if(a.length>10)
+	{
+	alert("Number is incorrect");
+	return false;
+	}
+	if(a.length<10)
+	{
+	alert("Number is incorrect");
+	return false;
+	}
+	if(isNaN(a))
+	{
+	alert("Number is incorrect");
+	return false;
+	}
+	if((a.charAt(0)!=9)&&(a.charAt(0)!=8)&&(a.charAt(0)!=7))
+	{
+	alert("Number is incorrect");
+	return false;
+	}
+}
+</script>
+<div id="d1">
+<h2 id="h1">DETAILS</h2>
+<hr style="border-color:rgb(180,0,0);">
+<table>
+      <tr>
+<td><p style="font-size:140%; color:rgb(0,0,0);">Fill this <font color="rgb(200,0,0);"><b>FORM</b></font> and get your favourite and desired home of your choice.</p>
+<img src="deco.jpg" style="width: 350px; height: 350px;"></td>
+	<td>
+     <form name="myform" id="myform" action="tenant.jsp" onsubmit='return validateForm()' method="post">
+    &nbsp;&nbsp;<label for="name"><b>NAME :<b></label><br>
+    <input type="text" id="name" name="name" placeholder="Name" ><br>
+
+    &nbsp;&nbsp;<label for="age"><b>AGE :<b></label><br>
+    <input type="text" id="age" name="age" placeholder="AGE"><br>
+  
+    &nbsp;&nbsp;<label for="noofmem"><b>NO OF MEMBERS. :<b></label><br>
+    <input type="text" id="noofmem" name="noofmem" placeholder="MEMBERS"><br>
+
+    &nbsp;&nbsp;<label for="email"><b>EMAIL ID :<b></label><br>
+    <input type="text" id="email" name="email" placeholder="EMail"><br>
+
+    &nbsp;&nbsp;<label for="pno"><b>PHONE NO. :<b></label><br>
+    <input type="text" id="pno" name="pno" placeholder="Phone Number" ><br>    
+
+    &nbsp;&nbsp;<label for="category"><b>CATEGORY<b></label><br>
+    <select id="category" name="category">
+      <option value="Tenamt">TENANT</option>
+      <option value="Owner">OWNER</option>
+    </select><br>
+
+    &nbsp;&nbsp;<label for="hostel"><b>FLATS & HOUSES<b></label><br>
+    <select id="hostel" name="hostel">
+      <option value="1BHK">1BHK</option>
+      <option value="2BHK">2BHK</option>
+      <option value="3BHK">3BHK</option>
+      <option value="4BHK">4BHK</option>
+      <option value="HOUSE">HOUSE</option>
+      </select><br><br>
+
+    &nbsp;&nbsp;<label for="requirements"><b>REQUIREMENTS :<b></label><br>
+    &nbsp;&nbsp;&nbsp;<textarea rows="4" cols="50" name="requirements" form="myform">Write your requirements here...</textarea><br><br>
+
+    &nbsp;&nbsp;<label for="suggestion"><b>SUGGESTION(optional) :<b></label><br>
+    &nbsp;&nbsp;&nbsp;<textarea rows="4" cols="50" name="suggestion" form="myform">Location & Occupation...</textarea><br>  
+
+    &nbsp;&nbsp;<input type="submit" value="Submit">
+    </form>
+
+    </td>
+    
+</tr>
+  
+</table>
+
+</div>
+
+<br>
+<br>
+<div id="d2">
+<h3 align="middle">ABOUT</h3>
+<p align="middle">This is about the Tenants and Owners. <br>You can search here a variety of flats and houses of your choice.<br>Fill this form and explore the variety.<br> We will provide the solution for your query in the minimum amount of time.</p>
+</div>
+<p align="right"><img src="Idea.png" style="height:250px;width:170px;"></p>
+</body>
+</html>

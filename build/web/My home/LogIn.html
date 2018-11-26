@@ -1,0 +1,86 @@
+<html>
+<head>
+<link rel="icon" href="F:\HTML\Site\logo.png" >
+<title>LogIN</title>
+<style>
+input[type=text]{
+    width: 100%;
+    padding: 15px;
+    margin: 8px;
+    background-color: rgba(255,255,255,0.8);
+    display: inline-block;
+    border:none;
+    box-sizing: border-box;
+}
+
+input[type=password]{
+    width: 100%;
+    padding: 15px;
+    margin: 8px;
+    background-color: rgba(255,255,255,0.8);
+    display: inline-block;
+    border:none;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgba(115,0,0,0.8);
+    color: white;
+    padding: 20px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button] {
+    width: 100%;
+    background-color: rgba(115,0,0,0.8);
+    color: white;
+    padding: 20px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+input[type=button]:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+div {
+    font-size:150%;
+    color:rgb(255,255,255);
+    margin-left: 455;
+    margin-top: 100;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 100px;
+    width: 350px;
+    height: 450px;
+}
+<title>LogIN</title>
+</style>
+</head>
+<body style="background-image:url('login1.png')">
+<div>
+  <form action="F:\HTML\Musify\Main">
+    <label for="Username">Username :</label><br><br>
+    <input type="text" id="Username" name="Username" placeholder="Username"><br><br><br>
+
+    <label for="password">Password :</label><br><br>
+    <input type="password" id="Password" name="Password" placeholder="Password"><br><br><br>
+  
+    <input type="submit" value="Submit">
+
+    <input type="button" value="CREATE ACCOUNT ?" onclick="location.href='SignUp.html';" /><br><br>
+
+  </form>
+</div>
+</body>
+</html>
